@@ -7,6 +7,8 @@ _Amoeba_proteus, Amphimedon_queenslandica, Anaeramoeba_flamelloides, Anaeramoeba
 # Files
 * eukProtv3TCStaxa_noEvidenceClearContamination.txt --> 165 species from EukProt v3 TCS for which I did not identify clear evidence of contamination
 * eukProtv3TCStaxa_yesEvidenceClearContamination.txt --> 31 species from EukProt v3 TCS for which I identified clear evidence of contamination
+* EukaryoteContaminationInspectedBUSCOphylogenies.zip --> In the context of the eukaryote contaminant screening, these PDF files (max 1 per species) include all BUSCO marker phylogenies which had to be inspected (those with >1 sequences for the query species). Species without PDF files did not have any BUSCO marker phylogeny to be inspected.
+* BacterialContaminationInspectedBUSCOphylogenies.zip --> In the context of the bacterial contaminant screening, these PDF files (max 1 per species) include all BUSCO marker phylogenies which had to be inspected (those with >1 sequences for the query species). Species without PDF files did not have any BUSCO marker phylogeny to be inspected.
 
 # Methodology
 I ran BUSCO v5.8.2 twice for each proteome (‘-m proteins’, hmmsearch v3.1 for the alignments), using ‘-l bacteria_odb10’ and ‘-l eukaryota_odb12’ as “lineage dataset” for the analyses intended to identify potential contaminant sequences from Bacteria and from eukaryotes, respectively.
