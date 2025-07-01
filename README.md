@@ -1,4 +1,4 @@
-# List of 31 species from EukProt v3 TCS for which I identified phylogenetic evidence of potential contamination
+# List of 31 species from EukProt v3 TCS for which I identified phylogenetic evidence of potential eukaryotic/bacterial contamination
 
 EukProt version 3 ‘The Comparative Set’ (TCS) includes 196 species [https://figshare.com/articles/dataset/TCS_tar_gz/21586065]. Based on the contamination screenings done, I recommend excluding these 31 species:
 
