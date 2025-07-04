@@ -18,7 +18,7 @@ For the identification of proteomes with potential eukaryotic contamination, I t
 I followed a similar approach for the identification of proteomes with potential bacterial contamination. Same as for ‘eukaryota_odb12’ in the case of eukaryotes, BUSCO ‘bacteria_odb12’ consist of a set of marker genes which are putative single copy orthologs widely distributed across Bacteria. However, the identification of BUSCO markers from ‘bacteria_odb12’ in eukaryotic proteomes is not necessarily indicative of contamination, since these markers can also have orthologs in eukaryotes. This approach thus also required building phylogenies for each query proteome and for each BUSCO ‘bacteria_odb12’ (unless not required, see below). Each phylogeny included the identified sequences from the query proteome, from the 20 target eukaryotic species listed above, and also from 23 target bacterial proteomes retrieved from the ‘Quest for Orthologs’ Reference Proteomes Release 2024_02: _Aquifex aeolicus, Bacillus subtilis, Bacteroides thetaiotaomicron, Bradyrhizobium diazoefficiens, Chloroflexus aurantiacus, Chlamydia trachomatis, Deinococcus radiodurans, Dictyoglomus turgidum, Escherichia coli, Fusobacterium nucleatum, Geobacter sulfurreducens, Gloeobacter violaceus, Helicobacter pylori, Leptospira interrogans, Mycoplasma genitalium, Mycobacterium tuberculosis, Neisseria meningitidis, Pseudomonas aeruginosa, Rhodopirellula baltica, Streptomyces coelicolor, Synechocystis sp., Thermotoga maritima, Thermodesulfovibrio yellowstonii_. I performed a first step to discard for visualization cases which were unlikely to represent contamination. I used BLAST 2.16.0+ to align all identified markers in our query proteomes to a database including the BUSCO markers identified in the 23 target bacterial proteomes and in the 20 target eukaryotic proteomes described above [-max_target_seqs 150 -evalue 1e-3]. I only considered for phylogenetic reconstruction and visualization those marker sequences for which the best scoring alignment was a bacterial sequence. The non-discarded sequences from this filter were submitted to a phylogenetic reconstruction process using the same software as described in the paragraph above.
 
 # Example of BUSCO phylogenies suggestive of potential bacterial contamination
-## _Amphimedon queenslandica_ (Metazoa)
+## _Amphimedon queenslandica_ (Metazoa, Opisthokonta)
 
 ![Screenshot from 2025-07-04 17-10-11](https://github.com/user-attachments/assets/f43f0a38-4319-407a-9280-986eca528414)
 
@@ -28,10 +28,19 @@ Case 1: This BUSCO phylogeny includes a sequence from _A. queenslandica_ surroun
 
 Case 2: The sequence from _A. queenslandica_ branches in a very distant clade to the other eukaryotic sequences (non-black colors). The other eukaryotic species represented are plastid-bearing lineages, which are phylogenetically unrelated to _A. queenslandica_. The decision of considering _A. queenslandica_ as a species including potential contamination was taken based on the finding on multiple examples of Case 1 and Case 2.
 
-![Screenshot from 2025-07-04 17-17-49](https://github.com/user-attachments/assets/c2390552-6cb6-45d7-b610-4d394b16f3c1)
+![Screenshot from 2025-07-04 17-37-31](https://github.com/user-attachments/assets/cc36d8fd-232b-4c80-9b84-acca933f4d33)
 
 Case 3: Despite the sequence from _A. queenslandica_ branches as sister-group to a clade of three bacterial sequences, the low internal branch supports do not allow to confidently infer a bacterial origin/contamination for this sequence. In fact, lack of phylogenetic resolution is the case for the most of BUSCO bacterial markers. Some of them are short-length sequences, which limits the phylogenetic resolution. Others are also highly conserved, which also limits the phylogenetic resolution. We thus were conservative, and only considered as potential evidence for contamination clearer cases such as Case 1 or Case 2.
 
+# Example of BUSCO phylogenies suggestive of potential eukaryotic contamination
+## _Syssomonas multiformis_ (Opisthokonta)
 
+![Screenshot from 2025-07-04 17-39-17](https://github.com/user-attachments/assets/0e0a8e5f-8aa1-4621-95e7-cd244f8c0f40)
+
+Case 1: Two sequences from _S. multiformis_ were identified. One of them branches, as expected, with other opisthokonta sequences (from _Rhizophagus irregularis_, a fungal species, and from _Capsaspora owczarzaki_, a unicellular holozoan). In contrast, the other sequence branches with two sequences from Stramenopiles (from _Ectocarpus siliculosus_, a brown algae, and from _Phytophtora infestans_, an oomycete). Stramenopiles are very phylogenetically unrelated to Opisthokonta. Of course, observing one of such a case is per se not conclussive of contamination: deep phylogenetic reconstructions are sensitive to errors. However, it is by the observance of multuple instances of this same pattern (see the phylogenies below) that potential contamination in _S. multiformis_ (Opisthokonta) from Stramenopiles was inferred. This finding is not surprising considering the fact that this species was fed with _Spumella sp._ (a Stramenopiles species) while being maintained in cultures (REF: https://doi.org/10.1016/j.cub.2017.06.006).
+
+![Screenshot from 2025-07-04 17-43-26](https://github.com/user-attachments/assets/d177e159-85cc-4315-ab55-f3f800cf86c1)
+
+![Screenshot from 2025-07-04 17-46-04](https://github.com/user-attachments/assets/49b998ad-eebb-4df9-be68-b16bc32f1023)
 
 
