@@ -19,12 +19,15 @@ I followed a similar approach for the identification of proteomes with potential
 
 # Example of BUSCO phylogenies suggestive of potential bacterial contamination
 ## _Amphimedon queenslandica_ (Metazoa)
+
 ![Screenshot from 2025-07-04 17-10-11](https://github.com/user-attachments/assets/f43f0a38-4319-407a-9280-986eca528414)
 
 Case 1: This BUSCO phylogeny includes a sequence from _A. queenslandica_ surrounded by sequences from bacterial origin. BUSCO identified an ortholog in _A. queenslandica_ but not in the other eukaryotes, strongly suggesting a potential bacterial origin/contamination for this sequence.
+
 ![Screenshot from 2025-07-04 17-12-04](https://github.com/user-attachments/assets/b63c8124-e368-477b-8fed-2252f0784a91)
 
 Case 2: The sequence from _A. queenslandica_ branches in a very distant clade to the other eukaryotic sequences (non-black colors). The other eukaryotic species represented are plastid-bearing lineages, which are phylogenetically unrelated to _A. queenslandica_. The decision of considering _A. queenslandica_ as a species including potential contamination was taken based on the finding on multiple examples of Case 1 and Case 2.
+
 ![Screenshot from 2025-07-04 17-17-49](https://github.com/user-attachments/assets/c2390552-6cb6-45d7-b610-4d394b16f3c1)
 
 Case 3: Despite the sequence from _A. queenslandica_ branches as sister-group to a clade of three bacterial sequences, the low internal branch supports do not allow to confidently infer a bacterial origin/contamination for this sequence. In fact, lack of phylogenetic resolution is the case for the most of BUSCO bacterial markers. Some of them are short-length sequences, which limits the phylogenetic resolution. Others are also highly conserved, which also limits the phylogenetic resolution. We thus were conservative, and only considered as potential evidence for contamination clearer cases such as Case 1 or Case 2.
