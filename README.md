@@ -2,7 +2,9 @@
 
 EukProt version 3 ‘The Comparative Set’ (TCS) includes 196 species [https://figshare.com/articles/dataset/TCS_tar_gz/21586065]. Based on the contamination screenings done, I recommend excluding these 31 species:
 
-_Amoeba_proteus, Amphimedon_queenslandica, Anaeramoeba_flamelloides, Anaeramoeba_ignava, Ancoracysta_twista, Apusomonadida_sp, Barthelona_sp, Capitella_teleta, Choanocystis_sp, Codosiga_hollandica, Colponema_vietnamica, Colponemidia_sp_Colp-10, Colponemidia_sp_Colp-15, Dysnectes_brevis, Entosiphon_sulcatum, Fabomonas_tropica, Gloeochaete_wittrockiana, Lapot_gusevi, Lenisia_limosa, Leptophrys_vorax, Madagascaria_erythrocladioides, Mantamonas_plastica, Nonionella_stella, Nutomonas_longa, Parvularia_atlantis, Paulinella_chromatophora, Rigifila_ramosa, Stygiella_incarcerata, Symbiodinium_sp, Syssomonas_multiformis, Telonema_sp_
+* Potential eukaryotic and bacterial contamination (4): _Choanocystis_sp, Colponema_vietnamica, Leptophrys_vorax, Nonionella_stella_
+* Potential eukaryotic contamination (7): _Colponemidia_sp_Colp-10, Colponemidia_sp_Colp-15, Gloeochaete_wittrockiana, Lapot_gusevi, Madagascaria_erythrocladioides, Syssomonas_multiformis, Telonema_sp_
+* Potential bacterial contamination (20): _Amoeba_proteus, Amphimedon_queenslandica, Anaeramoeba_flamelloides, Anaeramoeba_ignava, Ancoracysta_twista, Apusomonadida_sp, Barthelona_sp, Capitella_teleta, Codosiga_hollandica, Dysnectes_brevis, Entosiphon_sulcatum, Fabomonas_tropica, Lenisia_limosa, Mantamonas_plastica, Nutomonas_longa, Parvularia_atlantis, Paulinella_chromatophora, Rigifila_ramosa, Stygiella_incarcerata, Symbiodinium_sp_
 
 # Files
 * eukProtv3TCStaxa_noEvidenceClearContamination.txt: 165 species from EukProt v3 TCS for which I did not identify clear evidence of contamination
