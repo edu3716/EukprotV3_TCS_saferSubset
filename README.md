@@ -45,6 +45,8 @@ Case 1: Two sequences from _S. multiformis_ were identified for this BUSCO marke
 
 ![Screenshot from 2025-07-04 17-46-04](https://github.com/user-attachments/assets/49b998ad-eebb-4df9-be68-b16bc32f1023)
 
+![Screenshot from 2025-07-04 18-09-06](https://github.com/user-attachments/assets/b159546f-22fb-4315-b02e-69c5b8f783f4)
+
 NOTE: Do not pay attention to sequence names, as this were reformatted for standarization purposes in order to facilitate the manual inspection of the phylogenies.
 
 
